@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>K-Harmony Inc. Children's Choir</title>
+  <title>K-Harmony Inc.</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #fdf6f0;
-      color: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #2c2c2c;
+      background-color: #fff;
+      line-height: 1.6;
     }
 
     header {
       background-image: url('choir_members.jpg');
       background-size: cover;
       background-position: center;
-      color: white;
-      text-align: center;
-      height: 500px;
+      height: 60vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
     }
 
     header h1 {
       font-size: 3rem;
-      margin: 0;
+      margin-bottom: 0.5rem;
     }
 
     header p {
@@ -36,42 +42,73 @@
     }
 
     nav {
-      background: #fff;
-      padding: 1rem;
-      text-align: center;
-      border-top: 3px solid #6a0572;
-      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
-      margin: 0 1rem;
       color: #6a0572;
       text-decoration: none;
-      font-weight: bold;
+      margin: 0 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #6a0572;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
     section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      margin-bottom: 3rem;
     }
 
-    section img.logo {
+    section h2 {
+      color: #6a0572;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .logo {
       display: block;
-      margin: 2rem auto 1rem auto;
-      height: 80px; /* Smaller logo */
+      margin: 2rem auto;
+      height: 60px;
     }
 
     footer {
-      background: #6a0572;
+      background-color: #6a0572;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
     }
 
     a {
       color: #6a0572;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin: 0 1rem;
+      }
     }
   </style>
 </head>
@@ -90,24 +127,26 @@
 
   <img src="logo.png" alt="K-Harmony Logo" class="logo" />
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>K-Harmony is a children's and youth choir based on Korean culture. Its main purpose is to communicate with the community through choir and musical performances and to spread messages of world peace.</p>
-  </section>
+  <main class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>K-Harmony is a children's and youth choir based on Korean culture. Its main purpose is to communicate with the community through choir and musical performances and to spread messages of world peace.</p>
+    </section>
 
-  <section id="events">
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li><strong>May 10, 2025</strong>: AAPI (Asian American and Pacific Islander) celebration in Fairfax County</li>
-      <li><strong>July 20, 2025</strong>: K-Harmony performance at George Mason Regional Library</li>
-    </ul>
-  </section>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>May 10, 2025</strong>: AAPI (Asian American and Pacific Islander) celebration in Fairfax County</li>
+        <li><strong>July 20, 2025</strong>: K-Harmony performance at George Mason Regional Library</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us at: <a href="mailto:kharmonychoir@gmail.com">kharmonychoir@gmail.com</a></p>
-    <p>📍 Maryland, USA</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email us at: <a href="mailto:kharmonychoir@gmail.com">kharmonychoir@gmail.com</a></p>
+      <p>📍 Maryland, USA</p>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 K-Harmony Inc. All rights reserved.
